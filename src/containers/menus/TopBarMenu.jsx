@@ -4,7 +4,7 @@ import { useLocation, useNavigate } from 'react-router'
 const ITEMS = [
   { label: 'Home', icon: 'home-smile-line', key: '' },
   { label: 'Guides', icon: 'article-line', key: 'guides', path: 'guides/install' },
-  { label: 'Charts', icon: 'bar-chart-2-line', key: 'charts', path: 'charts/pie' },
+  { label: 'Charts', icon: 'bar-chart-2-line', key: 'charts', path: 'charts/bars' },
 ]
 
 export default function TopBarMenu() {
