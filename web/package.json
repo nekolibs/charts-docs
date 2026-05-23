@@ -1,0 +1,28 @@
+{
+  "name": "nekocharts-docs-web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "vite build && cp dist/index.html dist/200.html && surge dist nekocharts.surge.sh"
+  },
+  "dependencies": {
+    "@neko-os/charts": "0.1.0",
+    "@neko-os/ui": "0.5.2",
+    "@remixicon/react": "^4.6.0",
+    "dayjs": "^1.11.19",
+    "prism-react-renderer": "^2.4.1",
+    "ramda": "^0.32.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "react-router": "^7.8.1",
+    "tinycolor2": "^1.6.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.0",
+    "vite": "^7.1.2"
+  }
+}

@@ -1,0 +1,38 @@
+import { View } from '@neko-os/ui'
+import { PieChart } from '@neko-os/charts'
+
+import SampleCodeBlock from '../../../../components/code/SampleCodeBlock'
+
+const CODE = `
+import { PieChart } from '@neko-os/charts'
+
+const data = [
+  { x: 'Chrome', y: 65 },
+  { x: 'Safari', y: 19 },
+  { x: 'Firefox', y: 10 },
+  { x: 'Edge', y: 6 },
+]
+
+<PieChart data={data} size={150} />
+<PieChart data={data} size={200} />
+<PieChart data={data} size={300} />
+`
+
+const data = [
+  { x: 'Chrome', y: 65 },
+  { x: 'Safari', y: 19 },
+  { x: 'Firefox', y: 10 },
+  { x: 'Edge', y: 6 },
+]
+
+const CONTENT = (
+  <View row gap={20} center flex wrap>
+    <PieChart data={data} size={150} />
+    <PieChart data={data} size={200} />
+    <PieChart data={data} size={300} />
+  </View>
+)
+
+export default function SizesSample() {
+  return <SampleCodeBlock title="Sizes" code={CODE} content={CONTENT} />
+}
